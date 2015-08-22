@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>ifttt</title>
+    <script src="/javascripts/jquery-1.11.2.js"></script>
+    <script src="javascripts/bootstrap.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.leanModal.min.js"></script>
+    <script src="/javascripts/client.js"></script>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#"><img alt="IFTTT with Device"></a>
+        </div>
+       
+        <!-- <div class="pull-right"> -->
+        <td>
+          <div class="text-right">
+          <a type="button" class="btn btn-primary" rel="leanModal" href="#test_popup" id="login">ログイン</a>
+          <div>
+        </td>
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- ポップアップ表示する内容 -->
+    <div id="test_popup">
+      <div id="test_header">
+        <h2>タイトル</h2>
+      </div>
+      <div id="test_body">
+        <p>本文</p>
+        <a class="modal_close" href="javascript:void(0)">閉じる</a>
+      </div>
+    </div>
+
+    <div id="msg" name="msg"><br>
+    <input type="text" class="form-control" id="id" name="id" placeholder="ID">
+    <input type="password" class="form-control" id="pass" name="pass" placeholder="pass">
+  </body>
+</html>

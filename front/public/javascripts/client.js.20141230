@@ -1,0 +1,12 @@
+$(document).ready(function () {
+  $('#login').click (function () {
+    console.log($('#pass').val());
+    $.post('/getid', {"id" : $('#id').val(), "password" : $('#pass').val()} , function(data, err){
+      if ( Object.keys(data).length == 0 ){
+        $("#msg").after('<div class="alert alert-danger" role="alert"> <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span><span class="sr-only">Error:</span>ID/passwordが間違っています</div>');
+      } else {
+        $("#msg").html(data.l2id);
+      }
+    });
+  });
+});
